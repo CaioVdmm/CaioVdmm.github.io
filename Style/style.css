@@ -1,4 +1,10 @@
-#Menu {
+#Menubar {
   display: flex;
   flex-direction: row;
+}
+#menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
