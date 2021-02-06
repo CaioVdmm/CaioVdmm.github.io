@@ -6,5 +6,8 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+    overflow: hidden;
+}
+#menu ul li {
+  display: inline;
 }
