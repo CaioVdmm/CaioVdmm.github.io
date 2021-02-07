@@ -1,13 +1,78 @@
+body {
+  background-image: url("Images/Binary.png");
+  background-attachment: fixed;
+  margin: 0px;
+}
+#corpo {
+  width: 60%;
+  background-color: white;
+
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
 #Menubar {
   display: flex;
   flex-direction: row;
+  font-size: 1em;
+  align-items: center;
 }
+#Titulo {
+  font-size: 1.5em;
+  margin-left: 5px;
+}
+#collmenu {
+  width: 0px;
+  height: 0px;
+  visibility: hidden;
+}
+#menu {
+    margin-left: auto;
+    margin-right: 5px;
+    display: block;
+}
+#menu2 {
+    display: none;
+}
+
 #menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-    overflow: hidden;
+  overflow: hidden;
 }
 #menu ul li {
   display: inline;
+}
+#menu li{
+  font-size: 1em;
+}
+@media screen and (max-width: 1000px) {
+  #collmenu {
+    margin-left: auto;
+    margin-right: 5px;
+    height: 20px;
+    width: 50px;
+    visibility: visible;
+  }
+  #menu2 {
+    position: absolute;
+    display: none;
+    overflow: visible;
+    background-color: #f1f1f1;
+    width: fit-content;
+    right: 20%;
+    padding-right: 5px;
+    z-index: 4;
+  }
+  #text {
+
+    z-index: 1;
+  }
+  #menu {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+    display: none;
+  }
 }
