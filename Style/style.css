@@ -3,17 +3,10 @@ body {
   background-attachment: fixed;
   margin: 0px;
 }
-#corpo {
-  width: 75%;
-  background-color: white;
 
-  height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
-}
 #Menubar {
   display:flex;
+  position: relative;
   width: 76%;
   display: flex;
   flex-direction: row;
@@ -27,7 +20,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   height: 60px;
-  z-index: 5;
+  z-index: 0;
 }
 #ava {
   width: 54px;
@@ -123,4 +116,38 @@ body {
     width: 0px;
     display: none;
   }
+}
+
+#corpo {
+  position: relative;
+  width: 75%;
+  background-color: white;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -22px;
+  z-index: 1;
+}
+#who{
+  width: 200px;
+  height: auto;
+  float: left;
+  margin-left: 80px;
+  margin-top: 60px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#Titulo2 {
+    padding-top: 60px;
+    font-size: 20pt;
+}
+
+#text {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#text p{
+  font-size: 14pt;
 }
