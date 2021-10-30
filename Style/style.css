@@ -1,153 +1,140 @@
+/*------------------------------------------------------------------*/
+/*----------------------- HTML Default Tags ------------------------*/
+/*------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body {
-  background-image: url("Images/Binary.jpeg");
-  background-attachment: fixed;
-  margin: 0px;
+    background-image: url("Images/cool-background.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
 }
 
-#Menubar {
-  display:flex;
-  position: relative;
-  width: 76%;
-  display: flex;
-  flex-direction: row;
-  font-size: 1em;
-  align-items: center;
-  background-color: #000;
-  background-image: url("Images/MenuLeft.png"), url("Images/MenuRight.png"), url("Images/MenuCenter.png");
-  background-repeat: no-repeat, no-repeat, repeat-x;
-  background-position: left, right, center;
-  background-size: contain;
-  margin-left: auto;
-  margin-right: auto;
-  height: 60px;
-  z-index: 0;
-}
-#ava {
-  width: 54px;
-  height: 54px;
-  margin-left: 5px;
-}
-#Titulo {
-  font-size: 1.5em;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-}
-#collmenu {
-  width: 0px;
-  height: 0px;
-  visibility: hidden;
-}
-#menu {
-    margin-left: -180px;
-    margin-right: 5px;
-    display: block;
-}
-#menu2 {
-    display: none;
-}
 
-#menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+/*------------------------------------------------------------------*/
+/*------------------------------ Menu ------------------------------*/
+/*------------------------------------------------------------------*/
+.menu{
+    background-color: rgb(37, 37, 39);
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 10px;
 }
-#menu ul li {
-  display: inline;
-}
-#menu li{
-  font-size: 1em;
-  font-style: normal;
-  color: white;
-  text-decoration: none;
-}
-#menu li > a{
-  font-size: 1em;
-  font-style: normal;
-  color: white;
-  text-decoration: none;
-}
-#menu li > a:link{
-  font-style: normal;
-  color: white;
-  text-decoration: none;
-}
-#menu li > a:visited{
-  font-style: normal;
-  color: white;
-  text-decoration: none;
-}
-#menu li > a:hover{
-  font-style: normal;
-  color: white;
-  text-decoration: none;
-}
-#menu li > a:active{
-  font-style: normal;
-  color: white;
-  text-decoration: none;
-}
-@media screen and (max-width: 1000px) {
-  #collmenu {
-    margin-left: auto;
-    margin-right: 5px;
-    height: 20px;
-    width: 50px;
-    visibility: visible;
-  }
-  #menu2 {
-    position: absolute;
-    display: none;
-    overflow: visible;
-    background-color: #f1f1f1;
-    width: fit-content;
-    right: 20%;
+#nome{
+    padding-top: 2px;
+    padding-bottom: 2px;
     padding-right: 5px;
-    z-index: 4;
-  }
-  #text {
-
+    padding-left: 5px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 18px;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(100, 100, 100);
+    border-radius: 5px;
+    text-shadow: 1px 1px #000;
+    box-shadow: 1px 1px rgb(170, 170, 170);
+}
+#navbody{
+    background-color: rgb(37, 37, 39);
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+}
+#navbody ul{
+    max-width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+}
+#navbody ul li{
+    display: inline;
+}
+#navbody ul li a{
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+#navbody ul li a:hover {
+    background-color: rgb(24, 139, 233);
+}
+#aqui a{
+    background-color: rgb(100, 100, 100);
+}
+.fixar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0px !important;
+}
+/*------------------------------------------------------------------*/
+/*---------------------------- Conteúdo ----------------------------*/
+/*------------------------------------------------------------------*/
+.conteudo{
+    display: flex;
+    justify-content: center;
+    background: inherit;
+    
+}
+#glass{
+    width: 86%;
+    height: fit-content;
+    height: -moz-fit-content;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.4);
+    margin-top: 15px;
+    position: relative;
+    background: inherit;
+    overflow: hidden;
     z-index: 1;
-  }
-  #menu {
-    visibility: hidden;
-    height: 0px;
-    width: 0px;
-    display: none;
-  }
+}
+#glass:before{
+    content:"";
+    position: absolute;
+    background: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.6);
+    filter: blur(10px);
+    margin: -20px;
+    z-index: -1;
 }
 
-#corpo {
-  position: relative;
-  width: 75%;
-  background-color: white;
-  min-height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -22px;
-  z-index: 1;
-}
-#who{
-  width: 200px;
-  height: auto;
-  float: left;
-  margin-left: 80px;
-  margin-top: 60px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+#texto{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#Titulo2 {
-    padding-top: 60px;
-    font-size: 20pt;
+#foto{
+    float: left;
+    width:20%;
+    height: auto;
+    margin-right: 15px;
+    margin-top: 96px;
+}
+#titulo{
+    font-size: 2.5em;
+    text-align: center;
 }
 
-#text {
-  margin-left: 100px;
-  margin-right: 100px;
+#texto p{
+    font-size: 1.2em;
 }
 
-#text p{
-  font-size: 14pt;
-}
+
+/*------------------------------------------------------------------*/
+/*----------------------------- Rodapé -----------------------------*/
+/*------------------------------------------------------------------*/
